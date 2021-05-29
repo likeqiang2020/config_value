@@ -4,7 +4,7 @@ OBJS=$(patsubst %.c, %.o, $(SRC))    # 将SRC中所有出现的.c替换成.o
 
 TARGET=all			     # 目标文件
 
-$(TARGET):$(OBJS)		     # $@ 目标  $< 所有依赖  $^ 第一个依赖
+$(TARGET):$(OBJS)		     # $@ 目标  $^ 所有依赖  $< 第一个依赖
 	gcc $^ -o $@                       
 
 %.o:%.c                              # 将所有.c生成对应的.o
