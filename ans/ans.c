@@ -204,5 +204,7 @@ int main(int argc, char *argv[])
 	char *rev = get_config_value(dummy, argv[1], argv[2]);
 	printf("%s\n", rev);
 
+	destroy();
+	
 	return 0;
 }
